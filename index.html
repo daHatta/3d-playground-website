@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./src/images/common/me3d-icon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>me3D - Agentur für 3D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <style>
+      canvas {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#"><svg width="140" height="40" aria-label="me3D"><use xlink:href="./src/images/common/me3d-logo.svg#me3d-logo"></use></svg></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul role="list" class="nav-list" aria-label="navigation links">
+              <li><a href="#agentur">Agentur</a></li>
+              <li><a href="#modelle">Modelle</a></li>
+              <li><a href="#referenzen">Referenzen</a></li>
+              <li><a href="#publikationen">Publikationen</a></li>
+              <li><a href="#lehrauftraege">Lehraufträge</a></li>
+            </ul>
+          </nav>
+          <button class="btn | display-lg-none display-md-inline-flex">Kontakt</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="padding-block-900">
+        <div class="container" style="overflow: hidden;">
+          <h1 class="fs-primary-heading fw-bold text-centered">me Three Dee</h1>
+          <h2 class="fs-secondary-heading text-centered">3D Grafik und Animation by Maik Eckardt</h2>
+          <div id="canvas" class="canvas">
+
+          </div>
+        </div>
+      </section>
+      <section class="padding-block-900 bg-primary-400 text-neutral-100">
+        <h2 id="modelle" class="fs-secondary-heading margin-bottom-700 fw-semi-bold text-centered">Models</h2>
+        <div class="swiper" role="region" aria-roledescription="carousel" aria-label="3d models">
+          <div class="swiper-wrapper" role="group" aria-label="carousel display"></div>
+          <div aria-label="pagination" class="swiper-pagination"></div>
+          <button type="button" aria-label="previous 3d model" class="btn btn-circle swiper-button-prev"></button>
+          <button type="button" aria-label="next 3d model" class="btn btn-circle swiper-button-next"></button>
+        </div>
+        <div class="errorMessage"></div>
+      </section>
+      <section class="padding-block-900">
+        <div class="container">
+          <h2 id="agentur" class="fs-secondary-heading margin-bottom-700 fw-semi-bold text-centered">Agentur</h2>
+          <div class="margin-bottom-700 agency-card">
+            <div class="agency-card__content">
+              <div class="agency-card__frontside">
+                <figure class="agency-card__image-wrapper">
+                  <img loading="lazy" src="./src/images/common/me3d-owner.webp" width="688" height="688" alt="Maik Eckardt">
+                  <figcaption class="fw-semi-bold">
+                    Maik Eckardt, me Three Dee
+                  </figcaption>
+                </figure>
+                <div class="agency-card__list-wrapper">
+                  <ul role="list" class="fs-500 fw-semi-bold">
+                    <li class="agency-card__list-item"><span>3D Artist</span></li>
+                    <li class="agency-card__list-item"><span>Cinema 4D Trainer</span></li>
+                    <li class="agency-card__list-item"><span>Online Marketing Expert</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="agency-card__backside fw-semi-bold">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto eaque asperiores tempore explicabo eveniet nam et? Velit, maiores, cupiditate ad corporis reiciendis nobis laborum libero sequi, quae saepe deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto eaque asperiores tempore explicabo eveniet nam et? Velit, maiores, cupiditate ad corporis reiciendis nobis laborum libero sequi, quae saepe deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto eaque asperiores tempore explicabo eveniet nam et? Velit, maiores, cupiditate ad corporis reiciendis nobis laborum libero sequi, quae saepe deserunt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="padding-block-900 bg-accent-100">
+        <div class="container">
+          <h2 id="referenzen" class="fs-secondary-heading margin-bottom-700 fw-semi-bold text-centered">Referenzen</h2>
+          <div class="margin-bottom-700 credentials__wrapper">
+            <div class="credentials_background">
+              <ul role="list" class="credentials__list" aria-label="credentials">
+                <li> <span>Adidas</span></li>
+                <li> <span>Mercedes Benz AG</span></li>
+                <li> <span>Ami & Amitec Automesse</span></li>
+                <li> <span>FUJI-Film</span></li>
+                <li> <span>Internationale Funkausstellung (IFA)</span></li>
+                <li> <span>Heineken</span></li>
+                <li> <span>Bundesumweltministerium</span></li>
+                <li> <span>DZ-Bank</span></li>
+                <li> <span>Internationale Tourismus Börse (ITB)</span></li>
+                <li> <span>Sparkasse</span></li>
+                <li> <span>Wilhelm Koch GmbH</span></li>
+                <li> <span>Löwe AG</span></li>
+                <li> <span>Medi GmbH & Co. KG</span></li>
+                <li> <span>Robert Koch Institut</span></li>
+                <li> <span>Grüne Woche</span></li>
+                <li> <span>Volkswagen AG</span></li>
+                <li> <span>Lausitz Energie Bergbau AG (Rekord Briketts)</span></li>
+                <li> <span>Metro AG</span></li>
+                <li> <span>M2 Automation</span></li>
+                <li> <span>Mellow Boards</span></li>
+                <li> <span>Thyssenkrupp AG</span></li>
+                <li> <span>Klio-Eterna Schreibgeräte GmbH & Co. KG</span></li>
+                <li> <span>104.6 RTL Radio</span></li>
+                <li> <span>Möbel Höffner</span></li>
+                <li> <span>GASAG</span></li>
+                <li> <span>Strato AG</span></li>
+                <li> <span>Victoria Versicherungen</span></li>
+                <li> <span>Deutsche Telekom AG (T-Systems)</span></li>
+                <li> <span>Berliner Philharmonie</span></li>
+                <li> <span>Siemens AG</span></li>
+                <li> <span>S/CONSEPT GmbH</span></li>
+                <li> <span>Cisco Systems</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="padding-block-900 bg-primary-400 text-neutral-100">
+        <div class="container">
+          <h2 id="publikationen" class="fs-secondary-heading margin-bottom-700 text-centered">Publikationen</h2>
+          <div class="padding-block-700 books-list__wrapper">
+            <ul role="list" class="books-list" aria-label="books">
+              <li class="books-list__item">
+                <a href="https://www.amazon.de/Cinema-4D-R16-Maik-Eckardt-ebook/dp/B01DP7O6DQ/" target="_blank">
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="books-list__item-content text-centered">
+                    <img loading="lazy" width="150" height="211" src="./src/images/books/maik-eckardt-buch-c4d-r16.webp" alt="">
+                    <h3 class="title fw-semi-bold">Cinema 4D R16</h3>
+                    <span class="author">Maik Eckardt</span>
+                    <span class="publisher">MITP Verlag</span>
+                    <span class="isbn fs-200">ISBN 978-3-8266-9751-7</span>
+                    <div class="btn amazon">Zu Amazon</div>
+                  </div>
+                </a>
+              </li>
+              <li class="books-list__item">
+                <a href="https://www.amazon.de/Cinema-4D-17-Praxiseinstieg-Professional/dp/3958451705/" target="_blank">
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="books-list__item-content text-centered">
+                    <img loading="lazy" width="150" height="211" src="./src/images/books/maik-eckardt-buch-c4d-r17.webp" alt="">
+                    <h3 class="title fw-semi-bold">Cinema 4D R17</h3>
+                    <span class="author">Maik Eckardt</span>
+                    <span class="publisher">MITP Verlag</span>
+                    <span class="isbn fs-200">ISBN 978-3-95845-170-4</span>
+                    <div class="btn amazon">Zu Amazon</div>
+                  </div>
+                </a>
+              </li>
+              <li class="books-list__item">
+                <a href="https://www.amazon.de/Cinema-4D-R18-Praxiseinstieg-Professional/dp/395845450X/" target="_blank">
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="books-list__item-content text-centered">
+                    <img loading="lazy" width="150" height="211" src="./src/images/books/maik-eckardt-buch-c4d-r18.webp" alt="">
+                    <h3 class="title fw-semi-bold">Cinema 4D R18</h3>
+                    <span class="author">Maik Eckardt</span>
+                    <span class="publisher">MITP Verlag</span>
+                    <span class="isbn fs-200">ISBN 978-3-95845-450-7</span>
+                    <div class="btn amazon">Zu Amazon</div>
+                  </div>
+                </a>
+              </li>
+              <li class="books-list__item">
+                <a href="https://www.amazon.de/Cinema-4D-R19-Praxiseinstieg-Grafik/dp/3958456987/" target="_blank">
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="books-list__item-content text-centered">
+                    <img loading="lazy" width="150" height="211" src="./src/images/books/maik-eckardt-buch-c4d-r19.webp" alt="">
+                    <h3 class="title fw-semi-bold">Cinema 4D R19</h3>
+                    <span class="author">Maik Eckardt</span>
+                    <span class="publisher">MITP Verlag</span>
+                    <span class="isbn fs-200">ISBN 978-3-95845-698-3</span>
+                    <div class="btn amazon">Zu Amazon</div>
+                  </div>
+                </a>
+              </li>
+              <li class="books-list__item">
+                <a>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="books-list__item-content text-centered">
+                    <img loading="lazy" width="150" height="211" src="./src/images/books/maik-eckardt-buch-c4d-r20.webp" alt="">
+                    <h3 class="title fw-semi-bold">Cinema 4D R20</h3>
+                    <span class="author">Maik Eckardt</span>
+                    <span class="publisher">MITP Verlag</span>
+                    <span class="isbn fs-200">ISBN 978-3-95845-915-1</span>
+                  </div>
+                </a>
+              </li>
+              <li class="books-list__item">
+                <a href="https://www.amazon.de/Cinema-4D-R21-Praxiseinstieg-Professional/dp/374750132X/" target="_blank">
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="mouse-tracking-cell"></div>
+                  <div class="books-list__item-content text-centered">
+                    <img loading="lazy" width="150" height="211" src="./src/images/books/maik-eckardt-buch-c4d-r21.webp" alt="">
+                    <h3 class="title fw-semi-bold">Cinema 4D R21</h3>
+                    <span class="author">Maik Eckardt</span>
+                    <span class="publisher">MITP Verlag</span>
+                    <span class="isbn fs-200">ISBN 978-3-74750-132-0</span>
+                    <div class="btn amazon">Zu Amazon</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="padding-block-900">
+        <div class="container">
+          <h2 id="lehrauftraege" class="fs-secondary-heading margin-bottom-700 fw-semi-bold text-centered">Lehraufträge</h2>
+          <p>Seit 1999 Dozent für digitale Medien an verschiedenen Hoch- und Fachschulen.
+            Betreuungsdozent für Bachelor-, Diplom- und Lehrgangsabschlüsse und Fachbereichsleiter Multimedia.
+            Trainer für die Softwarehesteller Maxon, Nemetschek und Allplan für Fotografen und Architekten.
+            Privatunterricht und Unternehmensschulungen.</p>
+          <div class="padding-block-700 training-lists__wrapper even-columns">
+            <div class="training-list__item text-neutral-100">
+              <h3 class="margin-bottom-300 fs-500 fw-semi-bold">Fächer</h3>
+              <ul role="list" aria-label="training subjects">
+                <li>Cinema 4D</li>
+                <li>Adobe Photoshop</li>
+                <li>User Interface Design (UI und UX)</li>
+                <li>Online Marketing</li>
+                <li>Online Strategie</li>
+              </ul>
+            </div>
+            <div class="training-list__item text-neutral-100">
+              <h3 class="margin-bottom-300 fs-500 fw-semi-bold">Fachrichtungen</h3>
+              <ul role="list" aria-label="training disciplines">
+                <li>Kommunikationsdesign</li>
+                <li>Mediendesign</li>
+                <li>Fotografie</li>
+                <li>Architektur</li>
+                <li>Produktdesign</li>
+                <li>Motiondesign</li>
+                <li>Gamedesign</li>
+                <li>Film</li>
+              </ul>
+            </div>
+            <div class="training-list__item text-neutral-100">
+              <h3 class="margin-bottom-300 fs-500 fw-semi-bold">Institute</h3>
+              <ul role="list" aria-label="training institutions">
+                <li>SAE Institute Berlin</li>
+                <li>NEMETSCHEK Competence Center Berlin</li>
+                <li>IND - Institute of Design</li>
+                <li>HTK - Akademie für Gestaltung</li>
+                <li>BTK - Hochschule für Gestaltung</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="primary-footer padding-block-700 bg-primary-400 text-neutral-100">
+      <div class="container">
+        <div class="primary-footer__wrapper">
+          
+          <div class="primary-footer__column-three">
+            <div class="primary-footer__social-wrapper">
+              <h3 class="primary-footer__social-header">Folgen Sie uns auf:</h3>
+              <ul class="primary-footer__social-list" role="list" aria-label="social links">
+                <li><a href="#" class="social-link" aria-label="facebook">Facebook
+                    <svg class="social-icon">
+                      <use xlink:href="./src/images/common/me3d-social-icons.svg#icon-facebook"></use>
+                    </svg></a>
+                </li>
+                <li><a href="#" class="social-link" aria-label="instagram">Instagram
+                    <svg class="social-icon">
+                      <use xlink:href="./src/images/common/me3d-social-icons.svg#icon-instagram"></use>
+                    </svg></a>
+                </li>
+                <li><a href="#" class="social-link" aria-label="pinterest">Pinterest
+                  <svg class="social-icon">
+                    <use xlink:href="./src/images/common/me3d-social-icons.svg#icon-pinterest"></use>
+                  </svg></a>
+                </li>
+                <li><a href="#" class="social-link" aria-label="youtube">Youtube
+                  <svg class="social-icon">
+                    <use xlink:href="./src/images/common/me3d-social-icons.svg#icon-youtube"></use>
+                  </svg></a>
+                </li>
+                <li><a href="#" class="social-link" aria-label="twitter">Twitter
+                  <svg class="social-icon">
+                    <use xlink:href="./src/images/common/me3d-social-icons.svg#icon-twitter"></use>
+                  </svg></a>
+                </li>
+              </ul>
+            </div>
+            <p class="primary-footer__copyright">&copy; 2023 me3D</p>
+          </div>
+
+          <div class="primary-footer__column-two">
+            <nav class="primary-footer__nav">
+              <ul role="list" aria-label="footer links">
+                <li><a href="#agentur">Agentur</a></li>
+                <li><a href="#modelle">Modelle</a></li>
+                <li><a href="#referenzen">Referenzen</a></li>
+                <li><a href="#publikationen">Publikationen</a></li>
+                <li><a href="#lehrauftraege">Lehraufträge</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="primary-footer__column-one">
+            <a class="primary-footer__logo" href="#" aria-label="home">
+              <svg>
+                <use xlink:href="./src/images/common/me3d-logo.svg#me3d-logo"></use>
+              </svg></a>
+              
+              <address class="primary-footer__address">
+                <div class="vcard">
+                    <div class="fn n">
+                        <span class="given-name fw-semi-bold">Maik</span>
+                        <span class="family-name fw-semi-bold">Eckardt</span>
+                    </div>
+                    <div class="adr">
+                        <div class="claim">Agentur für 3D Grafik und Animation</div>
+                        <div class="street-address">Giesebrechtstraße 5</div>
+                        <span class="country-name">Deutschland</span> -
+                        <span class="postal-code">10629</span>
+                        <span class="locality">Berlin</span>
+                    </div>
+                    <div><span>Tel: </span><span class="tel">+49 (0)30 21462560</span></div>
+                    <div><span>Mail: </span><a class="email" href="mailto:platax@freenet.de">platax@freenet.de</a></div>
+                </div>
+              </address>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer-logo">
+        <svg width="36px" height="36px" viewBox="0 0 298 298" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g>
+                <path d="M149,0.5c81.959,0 148.5,66.541 148.5,148.5c0,81.959 -66.541,148.5 -148.5,148.5c-81.959,0 -148.5,-66.541 -148.5,-148.5c0,-81.959 66.541,-148.5 148.5,-148.5Zm-10.03,92.372l32.309,-32.309l40.387,40.387c31.206,31.206 31.206,81.876 -0,113.082c-31.206,31.206 -81.877,31.206 -113.083,0l-0.223,-0.222l0.003,-0.003c-4.237,-4.474 -4.164,-11.546 0.22,-15.929c4.383,-4.384 11.456,-4.457 15.929,-0.22l0.003,-0.003l0.223,0.223c22.29,22.29 58.483,22.29 80.773,-0c22.29,-22.29 22.29,-58.484 -0,-80.774l-24.232,-24.232l-16.155,16.155l24.232,24.232c4.458,4.458 4.458,11.697 0,16.155c-4.458,4.458 -11.696,4.458 -16.154,-0l-24.232,-24.232l-16.155,16.154l24.232,24.232c4.458,4.458 4.458,11.697 -0,16.155c-4.458,4.458 -11.697,4.458 -16.155,0l-24.232,-24.232l-24.525,24.526l-0.006,-0.006c-4.476,4.168 -11.496,4.072 -15.855,-0.288c-4.36,-4.36 -4.456,-11.379 -0.289,-15.856l-0.005,-0.005l24.526,-24.526l-24.232,-24.232c-4.458,-4.458 -4.458,-11.696 -0,-16.154c4.458,-4.458 11.696,-4.458 16.154,-0l24.232,24.232l16.155,-16.155l-24.232,-24.232c-4.458,-4.458 -4.458,-11.697 -0,-16.155c4.458,-4.458 11.697,-4.458 16.155,0l24.232,24.232Z">
+            </g>
+        </svg>
+        <p>Build by Heiko John in 2023</p>
+      </div>
+    </footer>
+    <button class="go-to-top" id="goToTop" title="Go to top">
+      <i class="icon-up-open"></i><br>
+      <span>Back to Top</span>
+    </button>
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@charset 'utf-8';
+
+/* ---------------- ABSTRACT ----------------- */
+// VARIABLES
+@import 'sass/abstracts/_variables';
+
+
+/* ---------------- BASE ----------------- */
+// RESET
+@import 'sass/base/_reset';
+// GENERAL
+@import 'sass/base/_general';
+// FONTS
+@import 'sass/base/_fonts';
+
+
+/* ---------------- LAYOUT ----------------- */
+// NAVIGATION
+@import 'sass/layout/_navigation';
+// FOOTER
+@import 'sass/layout/_footer';
+
+
+/* ---------------- COMPONENTS ----------------- */
+// BUTTONS
+@import 'sass/components/_buttons';
+// GO-TO-TOP BUTTON
+@import 'sass/components/_go-to-top-btn';
+// CANVAS
+@import 'sass/components/_canvas';
+// NUMBERED ITEMS
+@import 'sass/components/_numbered-items';
+// AGENCY
+@import 'sass/components/_agency';
+// CREDENTIALS
+@import 'sass/components/_credentials';
+// BOOKS
+@import 'sass/components/_books';
+// TRAINNG
+@import 'sass/components/_training';
+
+
+/* ---------------- UTILITY ----------------- */
+// UTILITY
+@import 'sass/base/_utility';
+

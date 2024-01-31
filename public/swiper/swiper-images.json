@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "title": "3 Little Foxes",
+        "description": "Ansicht dreier Füchse im Kreis.",
+        "genre": "character",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-01.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Gee Bee Airplane",
+        "description": "Seitenansicht eines Bee Gee Ralley Flugzeuges.",
+        "genre": "vehicle",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-02.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "St. Hedwig Kathedrale",
+        "description": "Frontalansicht der St. Hedwig Kathedrale in Berlin.",
+        "genre": "architecture",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-03.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Solar Butterfly",
+        "description": "Aufsicht eines Schmetterlings mit Solarpanel.",
+        "genre": "phantasie",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-04.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Flexible Shoe Insert",
+        "description": "Ansichten einer flexiblen Schuheinlage mit seinen einzelnen Schichten.",
+        "genre": "product design",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-05.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Factory Entrance",
+        "description": "Einfahrt zu einem Betriebsgelände mit Pförtnerhaus und Schranke.",
+        "genre": "architecture",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-06.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "3 Red Zela Bottles",
+        "description": "Drei rote rote Zela Trinkflaschen.",
+        "genre": "product design",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-07.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Mercedes Showroom",
+        "description": "Showroom deer Mercedes-Benz Group AG mit zwei Fahrzeugen im Bekini-Haus in Berlin.",
+        "genre": "architecture",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-08.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Pile of Pens",
+        "description": "Ansicht einer Ansammlung von anthrazitfarbener Kugelschreiber.",
+        "genre": "product design",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-09.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Socket Lights",
+        "description": "Zwei unterschiedliche Steckdosenleuchten mit verschieden farbigen Aufsätzen.",
+        "genre": "product design",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-10.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Coal Devils",
+        "description": "Zwei rote Teufelchen mit Kohlebriketts und/oder Holzscheit.",
+        "genre": "character",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-11.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Lawn Mower Robot",
+        "description": "Ein selbstfahrender, blaugrüner Rasenmäher-Roboter.",
+        "genre": "product design",
+        "images": [
+            {
+                "url": "./swiper/models/maik-eckardt-3d-12.webp",
+                "width": 960,
+                "height": 540
+            }
+        ]
+    }
+]

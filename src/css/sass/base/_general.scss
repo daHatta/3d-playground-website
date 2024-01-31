@@ -1,0 +1,22 @@
+/* ### GENERAL STYLING ## */
+body {
+    color: $clr-primary-600;
+    font-family: $ff-body;
+    font-size: $fs-body;
+    position: relative;
+}
+
+p:not([class]) { /* only simple p */
+    margin-block-end: $size-400;
+    opacity: .8;
+}
+
+p[data-width="wide"] {
+    max-width: 45ch;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}

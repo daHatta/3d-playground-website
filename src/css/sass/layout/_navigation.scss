@@ -1,0 +1,93 @@
+/* ### NAVIGATION ## */
+.primary-header {
+  background-color: $clr-neutral-100;
+  padding-top: $size-500;
+}
+
+.nav-wrapper {
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.primary-navigation {
+  align-items: center;
+  display: flex;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  font-size: $fs-nav;
+  font-weight: $fw-semi-bold;
+  gap: clamp($size-400, 5vw, $size-700);
+}
+
+.nav-list a {
+  color: $clr-primary-600;
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+  color: $clr-accent-400;
+}
+
+@media (max-width: $mq-medium) {
+
+  .primary-navigation {
+    background: $clr-neutral-100;
+    border-radius: $size-100;
+    box-shadow: 0 0 .75em rgba($clr-neutral-900, .05);
+    display: none;
+    inset: 7rem $size-400 auto;
+    margin-inline: auto;
+    max-width: 27rem;
+    padding: $size-700;
+    position: fixed;
+    z-index: 90;
+  }
+
+  .primary-header[data-overlay]::before {
+    content: "";
+    background-image: linear-gradient(transparent, $clr-neutral-900);
+    inset: 0;
+    position: fixed;
+    z-index: 89;
+  }
+
+  .nav-list {
+    display: grid;
+    font-weight: $fw-bold;
+    gap: $size-600;
+    text-align: center;
+  }
+
+  .primary-navigation[data-visible] {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+    position: sticky;
+
+    cursor: pointer;
+    background: transparent;
+    background-image: url("../images/common/me3d-hamburger.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    border-radius: 50%;
+    padding: 1em;
+    z-index: 90;
+  }
+  
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("../images/common/me3d-close.svg");
+  }
+}

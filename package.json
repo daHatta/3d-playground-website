@@ -1,0 +1,23 @@
+{
+  "name": "3d-playground-website",
+  "version": "1.0.0",
+  "description": "Playground for 3D models, 3D effects and animations build into a website.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build --mode development",
+    "preview": "vite preview",
+    "serve": "vite build && vite preview --host",
+    "compile:sass": "sass --watch ./src/css/style.scss ./src/css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.7",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.9",
+    "dotenv": "^16.3.1",
+    "swiper": "^11.0.5",
+    "three": "^0.152.2"
+  }
+}
