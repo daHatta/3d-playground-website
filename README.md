@@ -72,4 +72,4 @@ nice solution by **Khalid Abuhakmeh** in his blog-post [Manage Vite Assets Like 
 - 3D Model _Cars 2 The Video Game - FIllmore_ by [maximilian](https://sketchfab.com/maximilian_2)
 - _3D Tilting Card Effect with Mouse Tracking // HTML, CSS & JS_ by Kevin Powell [Youtube](https://www.youtube.com/watch?v=Z-3tPXf9a7M)
 - Intersection Observer API [Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
-- Manage Vite Assets Like A Pro [Khalid Abuhakmeh](https://khalidabuhakmeh.com/manage-vite-assets-like-a-pro)
+- _Manage Vite Assets Like A Pro_ by [Khalid Abuhakmeh](https://khalidabuhakmeh.com/manage-vite-assets-like-a-pro)
