@@ -478,7 +478,7 @@ img {
   height: 102%;
   transform: skew(30deg) translateY(0);
   transition: transform 0.5s ease;
-  z-index: -1;
+  z-index: 1;
 }
 
 .btn-animated::before {
@@ -492,13 +492,13 @@ img {
 }
 
 .btn-animated:hover::before {
-  z-index: 1;
   transform: skew(30deg) translateY(100%);
+  transition: transform 0.5s ease;
 }
 
 .btn-animated:hover::after {
-  z-index: 1;
   transform: skew(30deg) translateY(-100%);
+  transition: transform 0.5s ease;
 }
 
 .text-container {
@@ -510,7 +510,7 @@ img {
 .text {
   display: block;
   line-height: 1.3;
-  transition: 0.1s;
+  transition: all 0.1s;
 }
 
 .btn-animated:hover .text:nth-child(1) {
@@ -522,11 +522,11 @@ img {
   position: absolute;
   inset: 0;
   translate: 0 -80%;
+  z-index: 2;
 }
 
 .btn-animated:hover .text:nth-child(2) {
   translate: 0 0;
-  z-index: 2;
 }
 
 /* 480px */
