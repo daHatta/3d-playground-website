@@ -460,8 +460,8 @@ img {
 
 /* Button with Animation */
 .btn-animated {
-  background-color: hsl(189, 50%, 40%);
-  border: 2px solid hsl(189, 50%, 40%);
+  background-color: hsl(189, 80%, 50%);
+  border: 2px solid hsl(189, 80%, 50%);
   border-radius: 1000px;
   color: hsl(0, 0%, 100%);
   position: relative;
